@@ -55,7 +55,7 @@ def main():
     st.set_page_config(page_title="Image to audio story", page_icon="🤖", layout="centered")
 
     st.header("Turn img into audio story")
-    uploaded_file = st.file_uploader("Choose an image...", type="png")
+    uploaded_file = st.file_uploader("Choose an image...", type="jpeg")
     if uploaded_file is not None:
         image = convert_uploaded_file(uploaded_file)
         st.image(image, caption="Uploaded Image", use_column_width=True)
@@ -79,11 +79,11 @@ if __name__ == "__main__":
     # st.write("Upload an image and we will generate a short story based on it!")
     # uploaded_file = st.file_uploader("Choose an image...", type="jpg")
     # if uploaded_file is not None:
-    #     with open("image.png", "wb") as f:
+    #     with open("image.jpeg", "wb") as f:
     #         f.write(uploaded_file.getbuffer())
     #     st.image(uploaded_file, caption="Uploaded Image", use_column_width=True)
     #     st.write("Generating story...")
-    #     scenario = img2text("image.png")
+    #     scenario = img2text("image.jpeg")
     #     story = generate_story(scenario)
     #     text2speech(story)
     #     st.audio("output.mp3")
