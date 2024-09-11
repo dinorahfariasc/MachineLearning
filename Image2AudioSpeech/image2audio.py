@@ -29,8 +29,11 @@ def convert_uploaded_file(uploaded_file):
 def generate_story(scenario):
     generator = pipeline("text-generation", model="gpt2")
     template = '''
-    Generate a short simple story (do not supose or give steps) the story should be about 150 caracthers long, between 3 to 5 setences and should be based on the following Context: {scenario};
-
+    You are a creative writer and storyteller. Write a short story (150-200 characters) based on the following scene:
+    
+    - Context: {scenario}
+    - The story should include details about the characters' emotions, actions, and the environment around them. Be concise but vivid, and ensure the story feels logically connected to the scenario.
+    
     STORY:
     '''
     
