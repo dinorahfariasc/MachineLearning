@@ -29,7 +29,7 @@ def convert_uploaded_file(uploaded_file):
 def generate_story(scenario):
     generator = pipeline("text-generation", model="gpt2")
     template = '''
-    Generate a short story, the story should be about 150 caracthers long, between 3 to 5 setences and should be based on the following Context: {scenario};
+    Generate a short simple story (do not supose or give steps) the story should be about 150 caracthers long, between 3 to 5 setences and should be based on the following Context: {scenario};
 
     STORY:
     '''
