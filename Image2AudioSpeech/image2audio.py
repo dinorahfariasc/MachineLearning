@@ -30,7 +30,7 @@ def generate_story(scenario):
     generator = pipeline("text-generation", model="gpt2")
     template = '''
     You are a story teller;
-    You can generate a short story bases on a simple narrative, the story should be about 200 caracthers long, between 3 to 5 setences and should be based on the following Context;
+    You can generate a short story bases on a simple narrative, the story should be about 150 caracthers long, between 3 to 5 setences and should be based on the following Context;
 
     CONTEXT: {scenario}
     STORY:
