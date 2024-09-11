@@ -4,3 +4,5 @@ gtts
 streamlit
 Pillow
 python-dotenv
+langchain_core
+langchain_community
